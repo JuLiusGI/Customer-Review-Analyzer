@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Environment
+venv/
+env/
+.env
+
+# Data and Output
+data/
+output/
+# Keep gitignore and placeholder if folders are empty initially, but here we ignore content
+# If you want to commit the dummy data, remove 'data/' from above.
+
+# IDE
+.vscode/
+.idea/
+.gemini/
+.cursorrules
+
+# Agent & Plan (Private)
+.agent/
+plan.md
+
