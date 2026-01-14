@@ -7,7 +7,7 @@ A Python tool that uses AI (Sentence Transformers & K-Means) to cluster customer
 - **Text Embeddings**: Converts reviews into vector embeddings using `all-MiniLM-L6-v2`.
 - **Clustering**: Groups similar reviews using K-Means clustering.
 - **Sentiment Analysis**: Detects sentiment using a pre-trained DistilBERT pipeline.
-- **Reporting**: Generates a text summary and visualization plots.
+- **Interactive Dashboard**: Streamlit-based Web UI for easy analysis.
 
 ## Setup
 
@@ -15,20 +15,19 @@ A Python tool that uses AI (Sentence Transformers & K-Means) to cluster customer
 
     ```bash
     python -m venv venv
-    .\venv\Scripts\Activate
+    .\venv/Scripts/Activate
     pip install -r requirements.txt
     ```
 
-2.  **Generate Data** (Optional):
+2.  **Run Web UI (Recommended)**:
 
     ```bash
-    python src/generate_data.py
+    streamlit run src/gui.py
     ```
 
-3.  **Run Analyzer**:
-    ```bash
-    python src/app.py
-    ```
+3.  **Run CLI Mode (Alternative)**:
+    - Generate Data: `python src/generate_data.py`
+    - Run Analyzer: `python src/app.py`
 
 ## Output
 
